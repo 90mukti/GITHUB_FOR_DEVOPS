@@ -1,0 +1,130 @@
+git --version
+
+apt update && apt upgrade -y
+
+apt purge git
+
+inside repository 
+----------------------
+
+git init
+
+add-apt-repository ppa:git-core/ppa
+
+apt update; apt install git
+
+
+git status
+
+git config --global user.name "USER NAME"
+
+git config --global user.email "USER email"
+
+git config --local user.name "USER NAME"
+
+git config --local user.email "USER email"
+
+how to check these 
+---------------------
+
+git config --list
+git config --global --list
+git config --local --list
+
+
+cat .git/config
+
+git config --local user.name
+git config --local user.email
+
+git config --global user.name
+git config --global user.email
+
+
+cat ~/.gitconfig
+
+---------------------------
+
+three stages of git
+
+untracked stagged and tracked
+
+git status
+
+git add filename
+
+or
+
+git add . (all files)
+
+revert it back from staging
+---------------------------
+git add/rm filename
+
+to commit
+------------
+git commit -m "comment" filename #or git commit -m "comment" (wht evere in stage area it will commit)
+
+git log (in detail view) or git log --oneline
+
+Git hub:=
+++++++++++++++
+
+create repository in github without Read.md file 
+
+and link it to you local repository 
+
+with following commands
+
+git remote add origin https://github.com/<github id>/<repository id>.git
+
+git remote add origin https://github.com/90mukti/GITHUB_FOR_DEVOPS.git
+g
+git branch -M main   # (change your local repository braanch name from master to main)
+
+git push -u origin main #(and push your branch to main branch to git hub)
+
+git restore filename (to retore if file deleted)
+
+git remote -v (for checking it)
+
+git remote set-url origin https://<token>@github.com/repository-url
+
+eg:- git remote set-url origin https://token@github.com/90mukti/GITHUB_FOR_DEVOPS.git
+
+via ssh:
+-------------
+ssh-keygen
+
+# Step 2: Check the generated SSH key
+cat ~/.ssh/id_rsa.pub
+
+
+copy the key 
+
+Go to GitHub → Settings → SSH and GPG keys
+
+Click "New SSH key"
+
+Paste the key and save
+
+now u can acces it through ssh key
+
+git remote set-url origin git@github.com:90mukti/GITHUB_FOR_DEVOPS.git
+
+
+
+------------------------------
+
+git clone https://github.com/90mukti/GITHUB_FOR_DEVOPS.git
+
+or
+ git clone 
+
+
+
+
+
+
+
+
