@@ -95,7 +95,6 @@ eg:- git remote set-url origin https://token@github.com/90mukti/GITHUB_FOR_DEVOP
 via ssh:
 -------------
 ssh-keygen
-
 # Step 2: Check the generated SSH key
 cat ~/.ssh/id_rsa.pub
 
@@ -119,11 +118,14 @@ git remote set-url origin git@github.com:90mukti/GITHUB_FOR_DEVOPS.git
 git clone https://github.com/90mukti/GITHUB_FOR_DEVOPS.git
 
 or
- git clone 
+git clone git@github.com:90mukti/GITHUB_FOR_DEVOPS.git
 
+git rebase command:
+---------------------
+git log --oneline
+git rebase -i HEAD~1 or 2or 3
 
-
-
+replace pick with drop (inside the script file)
 
 
 
