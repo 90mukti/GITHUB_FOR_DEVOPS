@@ -1,0 +1,4 @@
+stages{
+    stage(git:scm)
+     step(git pust origin master)
+}
