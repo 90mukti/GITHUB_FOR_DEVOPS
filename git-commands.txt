@@ -25,8 +25,8 @@ or git commit -m "comment" (all file will commit which are on staging area)
 git status
 git status -v (detailed)
 git status -s (short)
- commit obeject = cn+delta
-  similarly commit object c3= c2+delta
+commit obeject = cn+delta
+similarly commit object c3= c2+delta
 
 commit a modified already commited/tracked file:
 --------------------------------------------------
