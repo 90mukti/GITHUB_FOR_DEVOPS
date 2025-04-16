@@ -26,6 +26,21 @@ git status
 git status -v (detailed)
 git status -s (short)
  commit obeject = cn+delta
+ similarly commit object c3= c2+delta
+
+commit a modified already commited/tracked file:
+--------------------------------------------------
+git commit -a -m "message" (filename )
+
+if you don't want to create new commit object and simply just want to add in exiting commit object for new change
+------------------------------------------------------------------------------------------------------------------
+but 1st bring it to staging area
+git add . or git add <file_name>
+git commit --amend 
+git commit --amend --no-edit (no message need to be given)
+(one editor will open simpy just add the file name or what ever you wanted to change change and save
+it will change the commit object)
+
 * secure hashing algoritham 1 technique taking snap shot of a file into 40 charachter alphaneumeric number while commited.
 
 git config --global user.name "USER NAME"
