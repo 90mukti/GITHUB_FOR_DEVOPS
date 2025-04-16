@@ -26,6 +26,12 @@ git status
 git status -v (detailed)
 git status -s (short)
  commit obeject = cn+delta
+ similarly commit object c3= c2+delta
+
+commit a modified already commited/tracked file:
+--------------------------------------------------
+git commit -a -m "message" (filename )
+
 * secure hashing algoritham 1 technique taking snap shot of a file into 40 charachter alphaneumeric number while commited.
 
 git config --global user.name "USER NAME"
