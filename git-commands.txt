@@ -170,6 +170,5 @@ git rebase -i HEAD~1 or 2or 3
 
 replace pick with drop (inside the script file)
 
-
-
+abc
 
