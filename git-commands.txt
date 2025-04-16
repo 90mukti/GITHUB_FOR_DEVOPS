@@ -13,8 +13,20 @@ add-apt-repository ppa:git-core/ppa
 
 apt update; apt install git
 
+git add .
+git restore --staged filenames
+or
+git rm --cached filenames
 
+git commit:
+---------------
+git commit -m "comment" file name 
+or git commit -m "comment" (all file will commit which are on staging area)
 git status
+git status -v (detailed)
+git status -s (short)
+ commit obeject = cn+delta
+* secure hashing algoritham 1 technique taking snap shot of a file into 40 charachter alphaneumeric number while commited.
 
 git config --global user.name "USER NAME"
 
@@ -60,6 +72,22 @@ git add . (all files)
 revert it back from staging
 ---------------------------
 git add/rm filename
+
+Git Branch:
+---------------------------
+git branch checkout -b <branchname>
+git switch branchname
+
+change name
+
+git branch -M oldbranch newbranchname
+git branch -m branchname 
+
+git branch -D branchname (delete branch)
+
+git fetch (all branch will be fetched)
+
+git fetch origin 
 
 to commit
 ------------
